@@ -1,38 +1,87 @@
-.App {
+body {
+  background-color: #2B283A;
+  padding: 20px;
   text-align: center;
+  font-family: "Karla", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2.75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  margin-top: 0.2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-section {
+  width: 100%;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  /* border-radius: 6px; */
+  border-bottom: 2px solid #a5a3af;
+}
+
+main {
+  background-color: #dddbdb;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 60vw;
+  min-width: 600px;
+  padding: 30px;
+  margin: 20px auto;
+}
+
+.dice-container {
+  width: 70%;
+  max-width: 500px;
+  height: 200px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.die-outer {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border: 2px solid #a5a3af;
+  border-radius: 6px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button {
+  background-color: #5035FF;
   color: white;
+  font-family: "Karla", sans-serif;
+  font-size: 1.85rem;
+  font-weight: bold;
+  text-align: center;
+  height: 70px;
+  width: 180px;
+  border-radius: 8px;
+  margin: 30px;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:focus,
+button:hover {
+  background-color: hwb(248 20% 50%);
 }

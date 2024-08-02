@@ -25,3 +25,15 @@
 .dot-7 { bottom: 0; right: 0; }
 .dot-8 { top: 50%; left: 0; transform: translate(0%, -50%);}
 .dot-9 { top: 50%; right: 0; transform: translate(0%, -50%);}
+
+@media (max-width: 440px) {
+    .die-face {
+        width: 30px;
+        height: 30px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
